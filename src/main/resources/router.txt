@@ -1,0 +1,10 @@
+# The example from https://guides.rubyonrails.org/routing.html#controller-namespaces-and-routing
+# see https://github.com/mhewedy/spring-router
+
+
+GET	            /admin/articles	                    ArticleController#index
+POST	        /admin/articles	                    ArticleController#create(Article)
+GET	            /admin/articles/{id}	            ArticleController#show(Long)
+PUT	            /admin/articles/{id}	            ArticleController#update(Long, Article)
+DELETE	        /admin/articles/{id}	            ArticleController#destroy(Long)
+
